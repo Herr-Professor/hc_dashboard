@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, request, jsonify, redirect, url_for
 import pandas as pd
 import json
@@ -7,6 +8,9 @@ from data_processor import process_data
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'data'
+
+# Ensure the upload folder exists
+os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -66,4 +70,5 @@ def search():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
