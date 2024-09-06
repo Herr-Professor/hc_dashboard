@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization Dashboard</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Data Visualization Dashboard</h1>
+        <p>Analyzing: {{ filename }}</p>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+    </header>
+
+    <main>
+        <section id="search-section">
+            <h2>Search Data</h2>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Enter search term...">
+                <button id="searchButton">Search</button>
+            </div>
+            <div id="searchResults"></div>
+            <div id="searchPlot" class="chart"></div>
+        </section>
+
+        <section id="summary-section">
+            <h2>Data Summary</h2>
+            <div id="summary" class="chart-grid"></div>
+        </section>
+
+        <section id="custom-plot-section">
+            <h2>Custom Visualization</h2>
+            <div id="customPlot" class="control-panel">
+                <select id="xAxis">
+                    <option value="">Select X-Axis</option>
+                    {% for column in columns %}
+                    <option value="{{ column }}">{{ column }}</option>
+                    {% endfor %}
+                </select>
+                <select id="yAxis">
+                    <option value="">Select Y-Axis</option>
+                    {% for column in columns %}
+                    <option value="{{ column }}">{{ column }}</option>
+                    {% endfor %}
+                </select>
+                <button id="plotButton">Create Custom Plot</button>
+            </div>
+            <div id="customPlotChart" class="chart"></div>
+        </section>
+    </main>
+
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <script>
+        var summaryCharts = {{ summary_charts|tojson|safe }};
+        var filename = {{ filename|tojson|safe }};
+    </script>
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>

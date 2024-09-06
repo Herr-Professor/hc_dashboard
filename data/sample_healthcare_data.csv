@@ -1,0 +1,51 @@
+patient_id,admission_date,discharge_date,age,gender,primary_diagnosis,secondary_diagnosis,length_of_stay,readmitted,department
+1001,2023-01-05,2023-01-10,45,M,Pneumonia,Hypertension,5,No,Internal Medicine
+1002,2023-01-07,2023-01-12,62,F,Diabetes,Obesity,5,No,Endocrinology
+1003,2023-01-10,2023-01-18,78,M,Heart Failure,Chronic Kidney Disease,8,Yes,Cardiology
+1004,2023-01-15,2023-01-17,33,F,Appendicitis,,2,No,General Surgery
+1005,2023-01-18,2023-01-25,55,M,Stroke,Hypertension,7,No,Neurology
+1006,2023-01-20,2023-01-22,28,F,Migraine,,2,No,Neurology
+1007,2023-01-22,2023-01-30,70,M,COPD,Pneumonia,8,Yes,Pulmonology
+1008,2023-01-25,2023-01-28,41,F,Gastroenteritis,,3,No,Gastroenterology
+1009,2023-01-28,2023-02-05,59,M,Myocardial Infarction,Diabetes,8,No,Cardiology
+1010,2023-02-01,2023-02-03,36,F,Bronchitis,,2,No,Internal Medicine
+1011,2023-02-03,2023-02-10,68,M,Pneumonia,COPD,7,No,Pulmonology
+1012,2023-02-05,2023-02-08,50,F,Hypertension,Obesity,3,No,Cardiology
+1013,2023-02-08,2023-02-15,75,M,Sepsis,Diabetes,7,Yes,Intensive Care
+1014,2023-02-10,2023-02-12,31,F,Gastritis,,2,No,Gastroenterology
+1015,2023-02-12,2023-02-20,64,M,Liver Cirrhosis,Alcoholism,8,No,Hepatology
+1016,2023-02-15,2023-02-18,42,F,Asthma,,3,No,Pulmonology
+1017,2023-02-18,2023-02-25,57,M,Kidney Stones,Hypertension,7,No,Urology
+1018,2023-02-20,2023-02-22,29,F,Appendicitis,,2,No,General Surgery
+1019,2023-02-22,2023-03-01,72,M,Parkinson's Disease,Depression,7,No,Neurology
+1020,2023-02-25,2023-02-28,39,F,Anemia,,3,No,Hematology
+1021,2023-02-28,2023-03-07,66,M,Prostate Cancer,Hypertension,7,No,Oncology
+1022,2023-03-02,2023-03-04,34,F,Urinary Tract Infection,,2,No,Urology
+1023,2023-03-04,2023-03-11,61,M,Diabetic Ketoacidosis,Obesity,7,Yes,Endocrinology
+1024,2023-03-07,2023-03-09,47,F,Migraine,Anxiety,2,No,Neurology
+1025,2023-03-09,2023-03-16,73,M,Hip Fracture,Osteoporosis,7,No,Orthopedics
+1026,2023-03-12,2023-03-14,35,F,Pyelonephritis,,2,No,Nephrology
+1027,2023-03-14,2023-03-21,69,M,Colorectal Cancer,Anemia,7,No,Oncology
+1028,2023-03-17,2023-03-19,43,F,Ovarian Cyst,,2,No,Gynecology
+1029,2023-03-19,2023-03-26,58,M,Pancreatitis,Alcoholism,7,No,Gastroenterology
+1030,2023-03-22,2023-03-24,32,F,Bronchitis,Asthma,2,No,Pulmonology
+1031,2023-03-24,2023-03-31,76,M,Alzheimer's Disease,Hypertension,7,No,Neurology
+1032,2023-03-27,2023-03-29,40,F,Endometriosis,,2,No,Gynecology
+1033,2023-03-29,2023-04-05,65,M,Chronic Kidney Disease,Diabetes,7,Yes,Nephrology
+1034,2023-04-01,2023-04-03,37,F,Appendicitis,,2,No,General Surgery
+1035,2023-04-03,2023-04-10,71,M,Pneumonia,Heart Failure,7,No,Internal Medicine
+1036,2023-04-06,2023-04-08,44,F,Gallstones,,2,No,General Surgery
+1037,2023-04-08,2023-04-15,60,M,Atrial Fibrillation,Hypertension,7,No,Cardiology
+1038,2023-04-11,2023-04-13,30,F,Gastroenteritis,,2,No,Gastroenterology
+1039,2023-04-13,2023-04-20,67,M,COPD,Emphysema,7,Yes,Pulmonology
+1040,2023-04-16,2023-04-18,38,F,Miscarriage,,2,No,Obstetrics
+1041,2023-04-18,2023-04-25,74,M,Stroke,Atrial Fibrillation,7,No,Neurology
+1042,2023-04-21,2023-04-23,46,F,Breast Cancer,,2,No,Oncology
+1043,2023-04-23,2023-04-30,63,M,Liver Cirrhosis,Hepatitis C,7,No,Hepatology
+1044,2023-04-26,2023-04-28,35,F,Pyelonephritis,,2,No,Nephrology
+1045,2023-04-28,2023-05-05,70,M,Hip Replacement,Osteoarthritis,7,No,Orthopedics
+1046,2023-05-01,2023-05-03,42,F,Ovarian Cancer,,2,No,Gynecology
+1047,2023-05-03,2023-05-10,68,M,Sepsis,Pneumonia,7,Yes,Intensive Care
+1048,2023-05-06,2023-05-08,39,F,Ectopic Pregnancy,,2,No,Obstetrics
+1049,2023-05-08,2023-05-15,77,M,Parkinson's Disease,Depression,7,No,Neurology
+1050,2023-05-11,2023-05-13,41,F,Thyroid Cancer,,2,No,Endocrinology
